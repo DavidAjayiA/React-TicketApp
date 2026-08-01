@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/React-TicketApp/',
+  base: '/React-TicketApp/docs/',
   plugins: [react()],
   server: { open: true }
 })
