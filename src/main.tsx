@@ -6,7 +6,7 @@ import './index.css'
 
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter basename="/React-TicketApp">
       <App />
     </HashRouter>
   </React.StrictMode>
