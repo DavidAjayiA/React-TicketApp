@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
 import { session } from '../../utils/session';
 import { toast } from 'react-toastify';
 
@@ -83,7 +83,7 @@ export default function Login() {
         {/* Buttons */}
         <div style={{ marginTop: 12 }}>
           <button type='submit' style={{ cursor: 'pointer' }}>Login</button>
-          <a href="/auth/signup" style={{ marginLeft: 12, textDecoration:"none" }}>Create Account</a>
+          <Link to="/auth/signup" style={{ marginLeft: 12, textDecoration:"none" }}>Create Account</Link>
         </div>
       </form>
     </div>

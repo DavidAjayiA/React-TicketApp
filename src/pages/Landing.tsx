@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Landing() {
   return (
@@ -10,8 +11,8 @@ export default function Landing() {
               <h1 style={{fontSize:36}}>TicketIQ — Intelligence for ticket managenment</h1>
               <p style={{opacity:0.85}}>Create, track and resolve tickets with a simple workflow.</p>
               <div style={{marginTop:16}}>
-                <a href="/auth/login" style={{marginRight:12, textDecoration:"none"}}>Login</a>
-                <a href="/auth/signup" style={{textDecoration:"none"}}>Get Started</a>
+                <Link to="/auth/login" style={{marginRight:12, textDecoration:"none"}}>Login</Link>
+                <Link to="/auth/signup" style={{textDecoration:"none"}}>Get Started</Link>
               </div>
             </div>
             <div style={{width:320,height:180,background:'white',borderRadius:20,boxShadow:'0 8px 30px rgba(2,6,23,0.08)',display:'flex',alignItems:'center',justifyContent:'center'}}>Feature Box</div>
